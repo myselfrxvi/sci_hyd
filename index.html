@@ -67,75 +67,8 @@
     </main>
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2024 School Science Exhibition. Made by Mrinal Shekhar, Ravinish Prakash, Piyush Yadav, Shivam Yadav, Suyash Raj, Shezpreet Singh.</p>
+            <p>&copy; 2024 School Science Exhibition. Designed with care for students.</p>
         </div>
     </footer>
- 
-    document.addEventListener("DOMContentLoaded", function() {
-        // Dynamically populate the hero section
-        const heroTitle = document.querySelector('.hero h1');
-        const heroSubtitle = document.querySelector('.hero p');
-
-        heroTitle.textContent = "Welcome to Our Website!";
-        heroSubtitle.textContent = "Discover amazing content and learn more about us.";
-
-        // Dynamically create benefits list
-        const benefitsList = document.querySelector('.benefits');
-        const benefitsData = [
-            { title: "High Quality", description: "We provide top-notch services." },
-            { title: "Affordable", description: "Our prices are unbeatable." },
-            { title: "Fast Delivery", description: "Get your orders delivered in no time." }
-        ];
-
-        benefitsData.forEach(benefit => {
-            const li = document.createElement('li');
-            li.innerHTML = `<strong>${benefit.title}</strong>: ${benefit.description}`;
-            benefitsList.appendChild(li);
-        });
-
-        // Dynamically load images into the gallery
-        const imageGrid = document.querySelector('.image-grid');
-        const images = [
-            'image1.jpg',
-            'image2.jpg',
-            'image3.jpg',
-            'image4.jpg'
-        ];
-
-        images.forEach(src => {
-            const img = document.createElement('img');
-            img.src = src;
-            img.alt = 'Gallery Image';
-            imageGrid.appendChild(img);
-        });
-    });
-        <script>
-    function toggleTheme() {
-        const root = document.documentElement;
-        const isDarkMode = root.style.getPropertyValue('--primary-color') === '#005bb5';
-
-        if (isDarkMode) {
-            root.style.setProperty('--primary-color', '#333');
-            root.style.setProperty('--secondary-color', '#555');
-            root.style.setProperty('--background-color', '#1a1a1a');
-            root.style.setProperty('--text-color', '#fff');
-            root.style.setProperty('--highlight-color', '#444');
-        } else {
-            root.style.setProperty('--primary-color', '#005bb5');
-            root.style.setProperty('--secondary-color', '#0073e6');
-            root.style.setProperty('--background-color', '#f9f9f9');
-            root.style.setProperty('--text-color', '#333');
-            root.style.setProperty('--highlight-color', '#e6f0ff');
-        }
-    }
-
-    // Add a button to toggle the theme
-    const themeButton = document.createElement('button');
-    themeButton.textContent = 'Toggle Theme';
-    themeButton.onclick = toggleTheme;
-    document.body.appendChild(themeButton);
-</script>
-
-
 </body>
 </html>
